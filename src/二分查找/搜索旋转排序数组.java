@@ -10,7 +10,7 @@ public class 搜索旋转排序数组 {
         int left = 0;
         int right = nums.length-1;
         while(left <= right) {
-            int mid = left+(right-left);
+            int mid = left+(right-left)/2;
             if (nums[mid] == target) return mid;
             if (nums[mid] > nums[left]) { //左边有序
                 if (nums[left]<=target && nums[mid]>target) {
