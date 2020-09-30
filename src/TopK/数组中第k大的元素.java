@@ -39,15 +39,6 @@ public class 数组中第k大的元素 {
         return start;
     }
 
-    private static void swap(int[] arr, int i, int j) {
-        if (arr == null || i >= arr.length || j >= arr.length || i < 0 || j < 0) {
-            return;
-        }
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
-
     public static void main(String[] args) {
         int[] arr = {1,5,9,41,6,5,2,6,5,196,8,16,51,77};
         //[1, 2, 5, 5, 5, 6, 6, 8, 9, 16, 41, 51, 77, 196]
