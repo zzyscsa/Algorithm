@@ -17,6 +17,7 @@ public class KMP {
      * @return 匹配到返回匹配的位置下标，未匹配到返回-1
      */
     public static int kmpSearch(String s1, String s2, int[] next) {
+        int aaaaa = 1;
         int j = 0; //s2匹配的位置
         for (int i = 0; i < s1.length(); i++) {
             while (j > 0 && s1.charAt(i)!=s2.charAt(j)) {
